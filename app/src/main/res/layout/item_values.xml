@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/white"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:layout_margin="8dp"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/valueParent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:civ_border_width="1dp"
+            android:id="@+id/valueImage"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:civ_border_color="@color/black"
+            android:src="@color/ios_blue"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Atomic Mass"
+            android:id="@+id/valueName"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/valueValue"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="103"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

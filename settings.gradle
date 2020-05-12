@@ -1,0 +1,2 @@
+rootProject.name='Periodic Table'
+include ':app'
