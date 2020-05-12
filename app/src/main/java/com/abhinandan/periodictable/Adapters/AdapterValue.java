@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.abhinandan.periodictable.AppData.AppData;
 import com.abhinandan.periodictable.R;
+import com.bumptech.glide.Glide;
 
 import java.util.Locale;
 
@@ -41,7 +42,6 @@ public class AdapterValue extends RecyclerView.Adapter<AdapterValue.ViewHolder> 
 
         holder.name.setText(AppData.getInstance().getNames().get(position));
         holder.value.setText(AppData.getInstance().getValues().get(position));
-
 
     }
 

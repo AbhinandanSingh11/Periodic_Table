@@ -95,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 
+
+
     class Sync extends AsyncTask<String, Void, Void>{
 
         @Override
