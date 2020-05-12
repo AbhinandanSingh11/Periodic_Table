@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,6 +43,10 @@ public class AdapterValue extends RecyclerView.Adapter<AdapterValue.ViewHolder> 
 
         holder.name.setText(AppData.getInstance().getNames().get(position));
         holder.value.setText(AppData.getInstance().getValues().get(position));
+        Glide.with(context)
+                .load(AppData.getInstance().getDrawables().get(position))
+                .placeholder(R.color.pink)
+                .into(holder.image);
 
     }
 
@@ -52,8 +57,8 @@ public class AdapterValue extends RecyclerView.Adapter<AdapterValue.ViewHolder> 
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        private CircleImageView image;
-        private TextView name, value;
+        private ImageView image;
+        private TextView name, value, text;
         private CardView parent;
 
         public ViewHolder(@NonNull View itemView) {
@@ -63,6 +68,7 @@ public class AdapterValue extends RecyclerView.Adapter<AdapterValue.ViewHolder> 
             name = itemView.findViewById(R.id.valueName);
             value =  itemView.findViewById(R.id.valueValue);
             parent = itemView.findViewById(R.id.valueParent);
+            text = itemView.findViewById(R.id.valueText);
         }
     }
 }

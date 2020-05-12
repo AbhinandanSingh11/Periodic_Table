@@ -1,5 +1,7 @@
 package com.abhinandan.periodictable.AppData;
 
+import android.graphics.drawable.Drawable;
+
 import com.abhinandan.periodictable.Models.Element;
 
 import java.util.ArrayList;
@@ -9,11 +11,13 @@ public class AppData {
     private ArrayList<Element> list;
     private ArrayList<String> values;
     private ArrayList<String> names;
+    private ArrayList<Integer> drawables;
 
     private AppData(){
         list = new ArrayList<>();
         values = new ArrayList<>();
         names = new ArrayList<>();
+        drawables = new ArrayList<>();
     }
 
     public static AppData getInstance(){
@@ -33,5 +37,8 @@ public class AppData {
     }
     public ArrayList<String> getNames(){
         return names;
+    }
+    public ArrayList<Integer> getDrawables(){
+        return drawables;
     }
 }

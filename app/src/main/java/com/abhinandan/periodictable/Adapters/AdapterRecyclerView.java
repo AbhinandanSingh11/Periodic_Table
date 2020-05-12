@@ -79,6 +79,27 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
                 AppData.getInstance().getValues().add(AppData.getInstance().getElement().get(position).getIonizationEnergy());
 
 
+                AppData.getInstance().getDrawables().add(R.drawable.name);
+                AppData.getInstance().getDrawables().add(R.drawable.bg);
+                AppData.getInstance().getDrawables().add(R.drawable.bg);
+                AppData.getInstance().getDrawables().add(R.drawable.bg);
+                AppData.getInstance().getDrawables().add(R.drawable.state);
+                AppData.getInstance().getDrawables().add(R.drawable.radius);
+                AppData.getInstance().getDrawables().add(R.drawable.boling);
+                AppData.getInstance().getDrawables().add(R.drawable.bonding);
+                AppData.getInstance().getDrawables().add(R.drawable.density);
+                AppData.getInstance().getDrawables().add(R.drawable.bg);
+                AppData.getInstance().getDrawables().add(R.drawable.bg);
+                AppData.getInstance().getDrawables().add(R.drawable.configuration);
+                AppData.getInstance().getDrawables().add(R.drawable.bg);
+                AppData.getInstance().getDrawables().add(R.drawable.boling);
+                AppData.getInstance().getDrawables().add(R.drawable.bg);
+                AppData.getInstance().getDrawables().add(R.drawable.vandelwall);
+                AppData.getInstance().getDrawables().add(R.drawable.discovery);
+                AppData.getInstance().getDrawables().add(R.drawable.energy);
+
+
+
                 AppData.getInstance().getNames().add("Name");
                 AppData.getInstance().getNames().add("Symbol");
                 AppData.getInstance().getNames().add("Atomic Mass");
