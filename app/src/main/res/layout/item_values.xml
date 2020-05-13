@@ -46,6 +46,7 @@
                 app:layout_constraintTop_toTopOf="@id/valueImage"
                 app:layout_constraintBottom_toBottomOf="@id/valueImage"
                 android:id="@+id/valueText"
+                android:textSize="31sp"
                 android:textColor="@color/white"/>
 
 

@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,11 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.abhinandan.periodictable.Activites.InfoActivity;
 import com.abhinandan.periodictable.AppData.AppData;
 import com.abhinandan.periodictable.R;
-import com.bumptech.glide.Glide;
-import com.google.android.gms.common.util.Hex;
 
-
-import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -80,23 +74,23 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
 
 
                 AppData.getInstance().getDrawables().add(R.drawable.name);
-                AppData.getInstance().getDrawables().add(R.drawable.bg);
-                AppData.getInstance().getDrawables().add(R.drawable.bg);
-                AppData.getInstance().getDrawables().add(R.drawable.bg);
+                AppData.getInstance().getDrawables().add(R.drawable.atomic_symbol);
+                AppData.getInstance().getDrawables().add(R.drawable.atomic_mass);
+                AppData.getInstance().getDrawables().add(R.drawable.atomic_number);
                 AppData.getInstance().getDrawables().add(R.drawable.state);
                 AppData.getInstance().getDrawables().add(R.drawable.radius);
-                AppData.getInstance().getDrawables().add(R.drawable.boling);
+                AppData.getInstance().getDrawables().add(R.drawable.boiling_point);
                 AppData.getInstance().getDrawables().add(R.drawable.bonding);
                 AppData.getInstance().getDrawables().add(R.drawable.density);
-                AppData.getInstance().getDrawables().add(R.drawable.bg);
-                AppData.getInstance().getDrawables().add(R.drawable.bg);
-                AppData.getInstance().getDrawables().add(R.drawable.configuration);
-                AppData.getInstance().getDrawables().add(R.drawable.bg);
-                AppData.getInstance().getDrawables().add(R.drawable.boling);
-                AppData.getInstance().getDrawables().add(R.drawable.bg);
+                AppData.getInstance().getDrawables().add(R.drawable.affinity);
+                AppData.getInstance().getDrawables().add(R.drawable.electronegativity);
+                AppData.getInstance().getDrawables().add(R.drawable.electronic_configuration);
+                AppData.getInstance().getDrawables().add(R.drawable.group);
+                AppData.getInstance().getDrawables().add(R.drawable.melting_point);
+                AppData.getInstance().getDrawables().add(R.drawable.oxidationstate);
                 AppData.getInstance().getDrawables().add(R.drawable.vandelwall);
-                AppData.getInstance().getDrawables().add(R.drawable.discovery);
-                AppData.getInstance().getDrawables().add(R.drawable.energy);
+                AppData.getInstance().getDrawables().add(R.drawable.discovery_year);
+                AppData.getInstance().getDrawables().add(R.drawable.atomic_energy);
 
 
 

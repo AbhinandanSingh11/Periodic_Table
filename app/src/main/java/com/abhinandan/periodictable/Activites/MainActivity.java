@@ -51,8 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recylerview);
 
-        //recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(12),false));
-
         setUp();
         new Sync().execute(URL);
     }

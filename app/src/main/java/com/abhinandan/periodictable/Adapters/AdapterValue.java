@@ -48,6 +48,13 @@ public class AdapterValue extends RecyclerView.Adapter<AdapterValue.ViewHolder> 
                 .placeholder(R.color.pink)
                 .into(holder.image);
 
+        if(position == 1){
+            holder.text.setText(AppData.getInstance().getValues().get(1));
+        }
+        else{
+            holder.text.setVisibility(View.GONE);
+        }
+
     }
 
     @Override
