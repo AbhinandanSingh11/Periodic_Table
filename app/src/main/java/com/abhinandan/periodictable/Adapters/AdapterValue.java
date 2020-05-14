@@ -48,13 +48,6 @@ public class AdapterValue extends RecyclerView.Adapter<AdapterValue.ViewHolder> 
                 .placeholder(R.color.pink)
                 .into(holder.image);
 
-        if(position == 1){
-            holder.text.setText(AppData.getInstance().getValues().get(1));
-        }
-        else{
-            holder.text.setVisibility(View.GONE);
-        }
-
     }
 
     @Override
@@ -65,7 +58,7 @@ public class AdapterValue extends RecyclerView.Adapter<AdapterValue.ViewHolder> 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         private ImageView image;
-        private TextView name, value, text;
+        private TextView name, value;
         private CardView parent;
 
         public ViewHolder(@NonNull View itemView) {
@@ -75,7 +68,6 @@ public class AdapterValue extends RecyclerView.Adapter<AdapterValue.ViewHolder> 
             name = itemView.findViewById(R.id.valueName);
             value =  itemView.findViewById(R.id.valueValue);
             parent = itemView.findViewById(R.id.valueParent);
-            text = itemView.findViewById(R.id.valueText);
         }
     }
 }

@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -50,7 +49,6 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
         holder.parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Clicked! "+ AppData.getInstance().getElement().get(position).getName(), Toast.LENGTH_SHORT).show();
                 AppData.getInstance().getValues().clear();
 
                 AppData.getInstance().getValues().add(AppData.getInstance().getElement().get(position).getName());
@@ -126,6 +124,7 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
     public int getItemCount() {
         return AppData.getInstance().getElement().size();
     }
+
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 

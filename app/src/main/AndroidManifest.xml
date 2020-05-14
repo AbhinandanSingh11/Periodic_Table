@@ -11,14 +11,15 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activites.InfoActivity"></activity>
-        <activity android:name=".Activites.MainActivity">
+        <activity android:name=".Activites.Splash_Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activites.InfoActivity" />
+        <activity android:name=".Activites.MainActivity"/>
     </application>
 
 </manifest>

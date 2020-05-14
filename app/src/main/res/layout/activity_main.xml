@@ -44,14 +44,12 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="7.0"
-            android:hint="Element"
+            android:hint="Name, Mass, Number"
             android:paddingStart="20dp"
             android:gravity="center_vertical"
             android:background="@drawable/backround_search_bar"
             android:id="@+id/searchBar"
-            android:maxLines="1"
-            android:maxLength="6"
-            android:inputType="number"/>
+            android:maxLines="1"/>
 
         <Button
             android:layout_width="0dp"
@@ -61,7 +59,7 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:background="@drawable/background_button_location"
-            android:id="@+id/check"/>
+            android:id="@+id/search"/>
 
     </LinearLayout>
 
@@ -78,4 +76,13 @@
         android:paddingEnd="12dp"
         android:paddingStart="12dp"/>
 
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/recylerview"
+        app:layout_constraintEnd_toEndOf="@id/recylerview"
+        app:layout_constraintBottom_toBottomOf="@id/recylerview"
+        app:layout_constraintTop_toTopOf="@id/recylerview"
+        android:id="@+id/progressBar"
+        android:visibility="gone"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

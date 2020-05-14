@@ -26,31 +26,13 @@
 
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp">
-
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
                 android:id="@+id/valueImage"
                 android:src="@color/ios_blue"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="@id/valueImage"
-                app:layout_constraintEnd_toEndOf="@id/valueImage"
-                app:layout_constraintTop_toTopOf="@id/valueImage"
-                app:layout_constraintBottom_toBottomOf="@id/valueImage"
-                android:id="@+id/valueText"
-                android:textSize="31sp"
-                android:textColor="@color/white"/>
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
